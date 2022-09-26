@@ -52,16 +52,7 @@ app.put("/users/edit/:id", (req, res) =>
 );
 
 // Delete /user/:id
-app.delete("/users/delete/:id", (req, res) =>
-  userGame
-    .destroy({ where: { id: req.params.id } })
-    .then(() =>
-      res.status(201).json({
-        message: `Users id of ${req.params.id} has been deleted!`,
-      })
-    )
-    .catch(() => res.status(422).send("Cannot delete the user id"))
-);
+app.delete("/users/delete/:id");
 
 // READ /user/biodata
 app.get("/biodata", (req, res) =>

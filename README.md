@@ -28,6 +28,8 @@ Requirement to install :
   - Username : admin
   - Password : admin
 
+### Nodes
+
 ### API
 
 - Get all users : GET <code>/api/v1/users</code>
@@ -48,7 +50,7 @@ Requirement to install :
 - [ ] Make the create room feature
 - [ ] Multiplayer feature
 - [ ] Fixing bug cannot redirect when login
-- [ ] Fixing bug where user can click the game again even if it's already selected
+- [ ] Fixing bug where user can click the janken button again even if it's already selected
 - [ ] Fixing routers that can't be shown
 - [ ] Fixing EJS especially the title
 - [ ] other fixing :tada:
