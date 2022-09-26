@@ -40,14 +40,15 @@ Requirement to install :
 
 ### Task List
 
-[x] Design Pattern MVC
-[] Implement the passport authetication
-[] Implement the JWT
-[] Add profile table for users
-[] Add game history table for users
-[] Make the create room feature
-[] Multiplayer feature
-[] Fixing bug cannot redirect when login
-[] Fixing bug where user can click the game again even if it's already selected
-[] Fixing routers that can't be shown
-[] Fixing EJS especially the title
+- [x] Design Pattern MVC
+- [ ] Implement the passport authetication
+- [ ] Implement the JWT
+- [ ] Add profile table for users
+- [ ] Add game history table for users
+- [ ] Make the create room feature
+- [ ] Multiplayer feature
+- [ ] Fixing bug cannot redirect when login
+- [ ] Fixing bug where user can click the game again even if it's already selected
+- [ ] Fixing routers that can't be shown
+- [ ] Fixing EJS especially the title
+- [ ] other fixing :tada:
