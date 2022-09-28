@@ -28,7 +28,7 @@ Requirement to install :
   - Username : admin
   - Password : admin
 
-### Nodes
+### Nodes/Path
 
 ### API
 
@@ -42,15 +42,18 @@ Requirement to install :
 
 ### Task List
 
-- [x] Design Pattern MVC
-- [ ] Implement the passport authetication
-- [ ] Implement the JWT
-- [ ] Add profile table for users
-- [ ] Add game history table for users
-- [ ] Make the create room feature
-- [ ] Multiplayer feature
+- [x] Design Pattern MVC & MCR
+- [ ] Implement the passport authetication (at least, someone can login)
+- [ ] Implement the JWT strategy
+- [ ] Create room feature :weary:
+- [ ] Connect profile table to database
+- [ ] Connect game history table to database
+- [ ] Multiplayer feature (not sure if this feature will come online, probably 5 years later :sad:)
+
+### Old Bug Fixing
+
 - [ ] Fixing bug cannot redirect when login
 - [ ] Fixing bug where user can click the janken button again even if it's already selected
 - [ ] Fixing routers that can't be shown
-- [ ] Fixing EJS especially the title
-- [ ] other fixing :tada:
+- [ ] Add EJS title, make it cleaner
+- [ ] other bugs will come for sure~ :tada:

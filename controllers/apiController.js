@@ -2,12 +2,12 @@ const { userGame, userBiodata, userGameHistory } = require("../models");
 
 module.exports = {
   //Get All Users
-  getAllUser: async (req, res) =>
+  allUser: async (req, res) =>
     await userGame
       .findAll({
         include: [
           {
-            model: userGameBiodata,
+            model: userBiodata,
           },
           {
             model: userGameHistory,
@@ -18,6 +18,25 @@ module.exports = {
         user.length == 0
           ? res.status(200).send("No users yet!")
           : res.status(200).json(user)
+      ),
+
+  user: async (req, res) =>
+    await userGame
+      .findOne({
+        where: {
+          id: req.params.id,
+        },
+        include: [
+          {
+            model: userBiodata,
+          },
+          {
+            model: userGameHistory,
+          },
+        ],
+      })
+      .then((user) =>
+        user ? res.status(200).json(user) : res.status(200).send("ID not found")
       ),
 
   update: async (req, res) =>
